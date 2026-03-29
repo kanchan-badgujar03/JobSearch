@@ -12,6 +12,11 @@
 <input type="text" id="search" placeholder="Search jobs...">
 
 <div id="jobs-container"></div>
+    <script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
 
 <script src="js/jobs.js"></script>
 <script src="js/script.js"></script>
